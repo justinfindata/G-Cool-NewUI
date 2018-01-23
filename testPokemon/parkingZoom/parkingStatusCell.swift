@@ -9,15 +9,13 @@
 import UIKit
 
 class parkingStatusCell: UICollectionViewCell {
-    @IBOutlet weak var widthConstraint: NSLayoutConstraint!
+    @IBOutlet weak var height: NSLayoutConstraint!
 //    @IBOutlet weak var aspectConstraint: NSLayoutConstraint!
     let screenSize = UIScreen.main.bounds.size
     override func awakeFromNib() {
         super.awakeFromNib()
-//    widthConstraint.constant = screenSize.width * 310/375
-    print(self.bounds.size)
-    
-        // Initialization code
+        let xFactor = screenSize.width / 375
+        height.constant = height.constant * xFactor
     }
 
 }

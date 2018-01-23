@@ -10,15 +10,14 @@ import UIKit
 
 class ParkingFeatureItemCell: UICollectionViewCell {
    
-    @IBOutlet weak var width: NSLayoutConstraint!
+    @IBOutlet private weak var height: NSLayoutConstraint!
+    @IBOutlet private weak var aspect: NSLayoutConstraint!
     
     let screenSize = UIScreen.main.bounds.size
     override func awakeFromNib() {
         super.awakeFromNib()
-       
-        // Initialization code
-//        widthConstraint.constant = screenSize.width * 80/375
-//
+        let xFactor = screenSize.width / 375
+        height.constant = height.constant * xFactor
     }
 
 }

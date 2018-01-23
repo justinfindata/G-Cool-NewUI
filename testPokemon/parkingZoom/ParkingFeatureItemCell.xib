@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -39,10 +40,10 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.76998626199814246" blue="0.0128663158320097" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="width" priority="750" constant="71" id="62a-5r-IJ7"/>
-                            <constraint firstAttribute="height" priority="750" constant="157" id="QdF-eQ-F4R"/>
+                            <constraint firstAttribute="height" priority="750" constant="148" id="QdF-eQ-F4R"/>
                             <constraint firstItem="kqC-Qk-lzg" firstAttribute="centerY" secondItem="KBw-Et-5wK" secondAttribute="centerY" id="S1b-Vi-fPK"/>
                             <constraint firstItem="kqC-Qk-lzg" firstAttribute="centerX" secondItem="KBw-Et-5wK" secondAttribute="centerX" id="a6F-QL-Oyu"/>
+                            <constraint firstAttribute="width" secondItem="KBw-Et-5wK" secondAttribute="height" multiplier="71:148" priority="750" id="qXD-rh-fzd"/>
                         </constraints>
                     </view>
                 </subviews>
@@ -57,6 +58,10 @@
             </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <size key="customSize" width="324" height="224"/>
+            <connections>
+                <outlet property="aspect" destination="qXD-rh-fzd" id="lqg-dR-cSj"/>
+                <outlet property="height" destination="QdF-eQ-F4R" id="OWV-iK-JBo"/>
+            </connections>
             <point key="canvasLocation" x="30.5" y="-23"/>
         </collectionViewCell>
     </objects>
