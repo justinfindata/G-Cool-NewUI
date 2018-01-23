@@ -15,17 +15,6 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
-        
-       
-//        let htmlText = "<font color=\"red\">hello</font><font color=\"blue\">world</font><font color=\"red\">!!!!</font>"
-//        
-//        if let htmlData = htmlText.data(using: String.Encoding.unicode) {
-//            do {
-//                let attributedText = try NSAttributedString(data: htmlData, options: [NSAttributedString.DocumentReadingOptionKey.documentType:NSAttributedString.DocumentType.html], documentAttributes: nil)
-//                htmlLabel.attributedText = attributedText
-//            } catch let e as NSError {
-//                print("Couldn't translate \(htmlText): \(e.localizedDescription) ")
-//            }
         }
         // Do any additional setup after loading the view, typically from a nib.
     
@@ -41,17 +30,27 @@ extension ViewController:UITableViewDelegate,UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 2
     }
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 3
+    }
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return "停車資訊"
+    }
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let view = sectionHeader(frame: CGRect(x: 0, y: 0, width: tableView.frame.width, height: 100))
+        return view
+    }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        var cellName = ""
         switch indexPath.row {
         case 0 :
-            let weatherZoomCell = tableView.dequeueReusableCell(withIdentifier: "AlertZoomCell")!
-            return weatherZoomCell
+            cellName = "AlertZoomCell"
         case 1:
-            let parkingZoomCell = tableView.dequeueReusableCell(withIdentifier: "ParkingZoomCell")!
-            return parkingZoomCell
+            cellName = "ParkingZoomCell"
         default:
-            let weatherZoomCell = tableView.dequeueReusableCell(withIdentifier: "AlertZoomCell")!
-            return weatherZoomCell
+            cellName = "AlertZoomCell"
         }
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellName)!
+        return cell
     }
 }

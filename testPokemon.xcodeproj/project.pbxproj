@@ -19,6 +19,7 @@
 		089A30F32011E3C300D67544 /* me_btn_rec_n.png in Resources */ = {isa = PBXBuildFile; fileRef = 089A30F22011E3C200D67544 /* me_btn_rec_n.png */; };
 		A16601C9E196F1DEBAB39408 /* Pods_testPokemon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBDB15B5C692989C288794BF /* Pods_testPokemon.framework */; };
 		D03A5FA42016331C00612D88 /* parkingZoomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03A5FA32016331C00612D88 /* parkingZoomCell.swift */; };
+		D059D6AA201788B800664DF4 /* sectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D059D6A9201788B800664DF4 /* sectionHeader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		089A30F22011E3C200D67544 /* me_btn_rec_n.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = me_btn_rec_n.png; sourceTree = "<group>"; };
 		B04CA6105528977D96E4CBF2 /* Pods-testPokemon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testPokemon.release.xcconfig"; path = "Pods/Target Support Files/Pods-testPokemon/Pods-testPokemon.release.xcconfig"; sourceTree = "<group>"; };
 		D03A5FA32016331C00612D88 /* parkingZoomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = parkingZoomCell.swift; sourceTree = "<group>"; };
+		D059D6A9201788B800664DF4 /* sectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sectionHeader.swift; sourceTree = "<group>"; };
 		DB3694FC3B3F813A881CE09B /* Pods-testPokemon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testPokemon.debug.xcconfig"; path = "Pods/Target Support Files/Pods-testPokemon/Pods-testPokemon.debug.xcconfig"; sourceTree = "<group>"; };
 		DBDB15B5C692989C288794BF /* Pods_testPokemon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_testPokemon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -90,6 +92,7 @@
 				0865ED6A2003403D006C0346 /* ViewController.swift */,
 				089A30F22011E3C200D67544 /* me_btn_rec_n.png */,
 				0865ED6C2003403D006C0346 /* Main.storyboard */,
+				D059D6A9201788B800664DF4 /* sectionHeader.swift */,
 				D03A5FA32016331C00612D88 /* parkingZoomCell.swift */,
 				080B3F222015B46700E56074 /* parkingZoom */,
 				0865ED6F2003403D006C0346 /* Assets.xcassets */,
@@ -251,6 +254,7 @@
 				08752A2D20157EA8009F842A /* parkingStatusCell.swift in Sources */,
 				D03A5FA42016331C00612D88 /* parkingZoomCell.swift in Sources */,
 				080B3F202015B45500E56074 /* ParkingFeatureItemCell.swift in Sources */,
+				D059D6AA201788B800664DF4 /* sectionHeader.swift in Sources */,
 				0865ED692003403D006C0346 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
