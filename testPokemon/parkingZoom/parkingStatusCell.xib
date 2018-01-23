@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -33,17 +32,17 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="148" id="t8j-DB-Zj1"/>
-                            <constraint firstAttribute="width" secondItem="kNl-7K-Mgs" secondAttribute="height" multiplier="310:148" id="tZN-uK-biW"/>
+                            <constraint firstAttribute="width" constant="310" id="9DM-hY-5FQ"/>
+                            <constraint firstAttribute="height" constant="148" id="ugJ-20-rnA"/>
                         </constraints>
                     </view>
                 </subviews>
             </view>
             <constraints>
-                <constraint firstAttribute="trailing" secondItem="kNl-7K-Mgs" secondAttribute="trailing" id="TYI-nZ-w2e"/>
-                <constraint firstItem="kNl-7K-Mgs" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="bWA-us-tEv"/>
-                <constraint firstAttribute="bottom" secondItem="kNl-7K-Mgs" secondAttribute="bottom" id="lnT-bc-6u9"/>
-                <constraint firstItem="kNl-7K-Mgs" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="oiy-Kf-AP1"/>
+                <constraint firstAttribute="trailing" secondItem="kNl-7K-Mgs" secondAttribute="trailing" id="Imp-En-n2Q"/>
+                <constraint firstItem="kNl-7K-Mgs" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="S4m-w1-Drv"/>
+                <constraint firstItem="kNl-7K-Mgs" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Uuh-5T-gg1"/>
+                <constraint firstAttribute="bottom" secondItem="kNl-7K-Mgs" secondAttribute="bottom" id="w1j-Gg-QC5"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <size key="customSize" width="392" height="161"/>

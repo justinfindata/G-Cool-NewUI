@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -55,7 +54,7 @@
                                                     </subviews>
                                                     <color key="backgroundColor" red="0.8633350133895874" green="0.35277721285820007" blue="0.35354036092758179" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" secondItem="cf0-Ua-y8f" secondAttribute="height" multiplier="375:92" id="M83-vF-fYe"/>
+                                                        <constraint firstAttribute="height" constant="92" id="Qce-ku-7Da"/>
                                                         <constraint firstItem="zVg-Jp-1g7" firstAttribute="centerX" secondItem="cf0-Ua-y8f" secondAttribute="centerX" id="Wam-42-NFO"/>
                                                         <constraint firstItem="zVg-Jp-1g7" firstAttribute="centerY" secondItem="cf0-Ua-y8f" secondAttribute="centerY" multiplier="1.35" id="gKG-3G-pQJ"/>
                                                         <constraint firstItem="zVg-Jp-1g7" firstAttribute="width" secondItem="cf0-Ua-y8f" secondAttribute="width" multiplier="0.92" id="h9A-K9-uIS"/>
@@ -74,30 +73,40 @@
                                         </tableViewCellContentView>
                                         <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ParkingZoomCell" rowHeight="158" id="CO6-VG-6Pf" userLabel="ParkingZoomCell">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ParkingZoomCell" rowHeight="158" id="CO6-VG-6Pf" userLabel="ParkingZoomCell" customClass="parkingZoomCell" customModule="testPokemon" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="120" width="375" height="158"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="CO6-VG-6Pf" id="2fc-ay-T7Q">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="157.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hsd-Vd-MY0">
-                                                    <rect key="frame" x="0.0" y="0.5" width="375" height="157"/>
-                                                    <color key="backgroundColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <collectionView multipleTouchEnabled="YES" contentMode="scaleToFill" directionalLockEnabled="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="5PQ-Xl-ASV">
+                                                    <rect key="frame" x="20" y="0.0" width="335" height="158"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="375" id="7u8-Vr-JKn"/>
-                                                        <constraint firstAttribute="width" secondItem="hsd-Vd-MY0" secondAttribute="height" multiplier="375:157" id="s8I-3Q-hIL"/>
+                                                        <constraint firstAttribute="height" constant="158" id="DZZ-wF-bD7"/>
                                                     </constraints>
-                                                </view>
+                                                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" sectionInsetReference="safeArea" id="DKl-o2-vji">
+                                                        <size key="itemSize" width="300" height="157"/>
+                                                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                    </collectionViewFlowLayout>
+                                                    <cells/>
+                                                </collectionView>
                                             </subviews>
+                                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.2031517551" colorSpace="custom" customColorSpace="sRGB"/>
                                             <constraints>
-                                                <constraint firstAttribute="bottom" secondItem="hsd-Vd-MY0" secondAttribute="bottom" id="OtC-5F-dPT"/>
-                                                <constraint firstItem="hsd-Vd-MY0" firstAttribute="top" secondItem="2fc-ay-T7Q" secondAttribute="top" id="c64-jd-4Ti"/>
-                                                <constraint firstAttribute="trailing" secondItem="hsd-Vd-MY0" secondAttribute="trailing" id="hxi-Vv-ZjQ"/>
-                                                <constraint firstItem="hsd-Vd-MY0" firstAttribute="leading" secondItem="2fc-ay-T7Q" secondAttribute="leading" id="wcY-J8-MhS"/>
+                                                <constraint firstAttribute="trailing" secondItem="5PQ-Xl-ASV" secondAttribute="trailing" constant="20" id="BK7-c0-dvR"/>
+                                                <constraint firstAttribute="bottom" secondItem="5PQ-Xl-ASV" secondAttribute="bottom" id="XL0-YH-nUd"/>
+                                                <constraint firstItem="5PQ-Xl-ASV" firstAttribute="left" secondItem="2fc-ay-T7Q" secondAttribute="left" constant="20" id="crr-Oc-Q1z"/>
+                                                <constraint firstItem="5PQ-Xl-ASV" firstAttribute="top" secondItem="2fc-ay-T7Q" secondAttribute="top" id="gez-UB-xpl"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <connections>
+                                            <outlet property="parkingZoomCollectionView" destination="5PQ-Xl-ASV" id="UOW-T9-KHl"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -112,23 +121,10 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="parkingZoomCollectionView" destination="5PQ-Xl-ASV" id="5lx-a7-hDY"/>
                         <outlet property="tableView" destination="sFn-Jp-dyT" id="tfn-xT-eet"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" directionalLockEnabled="YES" dataMode="prototypes" id="5PQ-Xl-ASV">
-                    <rect key="frame" x="0.0" y="0.0" width="375" height="147.5"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="DKl-o2-vji">
-                        <size key="itemSize" width="50" height="50"/>
-                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                    </collectionViewFlowLayout>
-                    <cells/>
-                </collectionView>
             </objects>
             <point key="canvasLocation" x="8.8000000000000007" y="-14.842578710644679"/>
         </scene>

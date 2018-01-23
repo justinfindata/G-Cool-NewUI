@@ -9,28 +9,21 @@
 /* Begin PBXBuildFile section */
 		080B3F202015B45500E56074 /* ParkingFeatureItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 080B3F1E2015B45500E56074 /* ParkingFeatureItemCell.swift */; };
 		080B3F212015B45500E56074 /* ParkingFeatureItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 080B3F1F2015B45500E56074 /* ParkingFeatureItemCell.xib */; };
-		0819F641200F1F250017B4A3 /* getItemRun.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 0819F640200F1F250017B4A3 /* getItemRun.gpx */; };
-		085DF79B200C427600EE6BDC /* getItem.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 085DF79A200C427600EE6BDC /* getItem.gpx */; };
-		085F5481200457AD00694D76 /* nearHome.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 085F5480200457AD00694D76 /* nearHome.gpx */; };
 		0865ED692003403D006C0346 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0865ED682003403D006C0346 /* AppDelegate.swift */; };
 		0865ED6B2003403D006C0346 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0865ED6A2003403D006C0346 /* ViewController.swift */; };
 		0865ED6E2003403D006C0346 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0865ED6C2003403D006C0346 /* Main.storyboard */; };
 		0865ED702003403D006C0346 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0865ED6F2003403D006C0346 /* Assets.xcassets */; };
 		0865ED732003403D006C0346 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0865ED712003403D006C0346 /* LaunchScreen.storyboard */; };
-		0865ED7B20034050006C0346 /* pokemonLocation.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 0865ED7A20034050006C0346 /* pokemonLocation.gpx */; };
-		0865ED7D20034084006C0346 /* egg.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 0865ED7C20034084006C0346 /* egg.gpx */; };
 		08752A2D20157EA8009F842A /* parkingStatusCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08752A2B20157EA8009F842A /* parkingStatusCell.swift */; };
 		08752A2E20157EA8009F842A /* parkingStatusCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08752A2C20157EA8009F842A /* parkingStatusCell.xib */; };
 		089A30F32011E3C300D67544 /* me_btn_rec_n.png in Resources */ = {isa = PBXBuildFile; fileRef = 089A30F22011E3C200D67544 /* me_btn_rec_n.png */; };
 		A16601C9E196F1DEBAB39408 /* Pods_testPokemon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBDB15B5C692989C288794BF /* Pods_testPokemon.framework */; };
+		D03A5FA42016331C00612D88 /* parkingZoomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03A5FA32016331C00612D88 /* parkingZoomCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		080B3F1E2015B45500E56074 /* ParkingFeatureItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingFeatureItemCell.swift; sourceTree = "<group>"; };
 		080B3F1F2015B45500E56074 /* ParkingFeatureItemCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ParkingFeatureItemCell.xib; sourceTree = "<group>"; };
-		0819F640200F1F250017B4A3 /* getItemRun.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = getItemRun.gpx; sourceTree = "<group>"; };
-		085DF79A200C427600EE6BDC /* getItem.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = getItem.gpx; sourceTree = "<group>"; };
-		085F5480200457AD00694D76 /* nearHome.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = nearHome.gpx; sourceTree = "<group>"; };
 		0865ED652003403D006C0346 /* testPokemon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testPokemon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0865ED682003403D006C0346 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0865ED6A2003403D006C0346 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -38,13 +31,12 @@
 		0865ED6F2003403D006C0346 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0865ED722003403D006C0346 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0865ED742003403D006C0346 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0865ED7A20034050006C0346 /* pokemonLocation.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = pokemonLocation.gpx; sourceTree = "<group>"; };
-		0865ED7C20034084006C0346 /* egg.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = egg.gpx; sourceTree = "<group>"; };
 		08752A2B20157EA8009F842A /* parkingStatusCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = parkingStatusCell.swift; sourceTree = "<group>"; };
 		08752A2C20157EA8009F842A /* parkingStatusCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = parkingStatusCell.xib; sourceTree = "<group>"; };
 		0893B9AF2015C43F0098D307 /* testPokemon.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = testPokemon.entitlements; sourceTree = "<group>"; };
 		089A30F22011E3C200D67544 /* me_btn_rec_n.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = me_btn_rec_n.png; sourceTree = "<group>"; };
 		B04CA6105528977D96E4CBF2 /* Pods-testPokemon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testPokemon.release.xcconfig"; path = "Pods/Target Support Files/Pods-testPokemon/Pods-testPokemon.release.xcconfig"; sourceTree = "<group>"; };
+		D03A5FA32016331C00612D88 /* parkingZoomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = parkingZoomCell.swift; sourceTree = "<group>"; };
 		DB3694FC3B3F813A881CE09B /* Pods-testPokemon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testPokemon.debug.xcconfig"; path = "Pods/Target Support Files/Pods-testPokemon/Pods-testPokemon.debug.xcconfig"; sourceTree = "<group>"; };
 		DBDB15B5C692989C288794BF /* Pods_testPokemon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_testPokemon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -98,15 +90,11 @@
 				0865ED6A2003403D006C0346 /* ViewController.swift */,
 				089A30F22011E3C200D67544 /* me_btn_rec_n.png */,
 				0865ED6C2003403D006C0346 /* Main.storyboard */,
+				D03A5FA32016331C00612D88 /* parkingZoomCell.swift */,
 				080B3F222015B46700E56074 /* parkingZoom */,
 				0865ED6F2003403D006C0346 /* Assets.xcassets */,
 				0865ED712003403D006C0346 /* LaunchScreen.storyboard */,
 				0865ED742003403D006C0346 /* Info.plist */,
-				0865ED7C20034084006C0346 /* egg.gpx */,
-				085F5480200457AD00694D76 /* nearHome.gpx */,
-				085DF79A200C427600EE6BDC /* getItem.gpx */,
-				0865ED7A20034050006C0346 /* pokemonLocation.gpx */,
-				0819F640200F1F250017B4A3 /* getItemRun.gpx */,
 			);
 			path = testPokemon;
 			sourceTree = "<group>";
@@ -195,17 +183,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				085DF79B200C427600EE6BDC /* getItem.gpx in Resources */,
-				085F5481200457AD00694D76 /* nearHome.gpx in Resources */,
 				080B3F212015B45500E56074 /* ParkingFeatureItemCell.xib in Resources */,
 				0865ED732003403D006C0346 /* LaunchScreen.storyboard in Resources */,
 				0865ED702003403D006C0346 /* Assets.xcassets in Resources */,
 				089A30F32011E3C300D67544 /* me_btn_rec_n.png in Resources */,
 				08752A2E20157EA8009F842A /* parkingStatusCell.xib in Resources */,
-				0865ED7B20034050006C0346 /* pokemonLocation.gpx in Resources */,
-				0865ED7D20034084006C0346 /* egg.gpx in Resources */,
 				0865ED6E2003403D006C0346 /* Main.storyboard in Resources */,
-				0819F641200F1F250017B4A3 /* getItemRun.gpx in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,6 +249,7 @@
 			files = (
 				0865ED6B2003403D006C0346 /* ViewController.swift in Sources */,
 				08752A2D20157EA8009F842A /* parkingStatusCell.swift in Sources */,
+				D03A5FA42016331C00612D88 /* parkingZoomCell.swift in Sources */,
 				080B3F202015B45500E56074 /* ParkingFeatureItemCell.swift in Sources */,
 				0865ED692003403D006C0346 /* AppDelegate.swift in Sources */,
 			);
@@ -410,7 +394,7 @@
 				INFOPLIST_FILE = testPokemon/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = findata.com.testPokemon;
+				PRODUCT_BUNDLE_IDENTIFIER = gcool.com.testPokemon;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -427,7 +411,7 @@
 				INFOPLIST_FILE = testPokemon/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = findata.com.testPokemon;
+				PRODUCT_BUNDLE_IDENTIFIER = gcool.com.testPokemon;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

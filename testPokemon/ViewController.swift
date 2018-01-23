@@ -11,19 +11,11 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
-    @IBOutlet weak var parkingZoomCollectionView: UICollectionView!
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
-        parkingZoomCollectionView.delegate = self
-        parkingZoomCollectionView.dataSource = self
-        parkingZoomCollectionView.clipsToBounds = false
-        parkingZoomCollectionView.register(UINib.init(nibName: "parkingStatusCell", bundle: nil), forCellWithReuseIdentifier: "parkingStatusCell")
-        parkingZoomCollectionView.register(UINib.init(nibName: "ParkingFeatureItemCell", bundle: nil), forCellWithReuseIdentifier: "ParkingFeatureItemCell")
-        if let collectionFlowLayout = parkingZoomCollectionView.collectionViewLayout as? UICollectionViewFlowLayout {
-             collectionFlowLayout.estimatedItemSize = CGSize(width: 1, height: 1)
-        }
+        
        
 //        let htmlText = "<font color=\"red\">hello</font><font color=\"blue\">world</font><font color=\"red\">!!!!</font>"
 //        
@@ -56,42 +48,10 @@ extension ViewController:UITableViewDelegate,UITableViewDataSource{
             return weatherZoomCell
         case 1:
             let parkingZoomCell = tableView.dequeueReusableCell(withIdentifier: "ParkingZoomCell")!
-            let contentView = parkingZoomCell.contentView
-            contentView.addSubview(parkingZoomCollectionView)
-            parkingZoomCollectionView.translatesAutoresizingMaskIntoConstraints = false
-            parkingZoomCollectionView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 20).isActive = true
-            parkingZoomCollectionView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -20).isActive = true
-            parkingZoomCollectionView.topAnchor.constraint(equalTo: contentView.topAnchor).isActive = true
-            parkingZoomCollectionView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor).isActive = true
             return parkingZoomCell
         default:
             let weatherZoomCell = tableView.dequeueReusableCell(withIdentifier: "WeatherZoomCell")!
             return weatherZoomCell
         }
     }
-}
-extension ViewController:UICollectionViewDelegate,UICollectionViewDataSource{
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 5
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        switch indexPath.row {
-        case 0 :
-            let parkingStatusCell = collectionView.dequeueReusableCell(withReuseIdentifier: "parkingStatusCell", for: indexPath)
-            return parkingStatusCell
-//            let parkingStatusCell = collectionView.dequeueReusableCell(withReuseIdentifier: "ParkingFeatureItemCell", for: indexPath)
-//            return parkingStatusCell
-        case 1:
-//            let parkingSupportCell = collectionView.dequeueReusableCell(withReuseIdentifier: "parkingSupportCell", for: indexPath)
-//            return parkingSupportCell
-            let parkingStatusCell = collectionView.dequeueReusableCell(withReuseIdentifier: "ParkingFeatureItemCell", for: indexPath)
-            return parkingStatusCell
-        default:
-            let parkingStatusCell = collectionView.dequeueReusableCell(withReuseIdentifier: "ParkingFeatureItemCell", for: indexPath)
-            return  parkingStatusCell
-        }
-    }
-    
-    
 }
