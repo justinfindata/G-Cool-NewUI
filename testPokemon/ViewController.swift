@@ -44,13 +44,13 @@ extension ViewController:UITableViewDelegate,UITableViewDataSource{
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         switch indexPath.row {
         case 0 :
-            let weatherZoomCell = tableView.dequeueReusableCell(withIdentifier: "WeatherZoomCell")!
+            let weatherZoomCell = tableView.dequeueReusableCell(withIdentifier: "AlertZoomCell")!
             return weatherZoomCell
         case 1:
             let parkingZoomCell = tableView.dequeueReusableCell(withIdentifier: "ParkingZoomCell")!
             return parkingZoomCell
         default:
-            let weatherZoomCell = tableView.dequeueReusableCell(withIdentifier: "WeatherZoomCell")!
+            let weatherZoomCell = tableView.dequeueReusableCell(withIdentifier: "AlertZoomCell")!
             return weatherZoomCell
         }
     }
