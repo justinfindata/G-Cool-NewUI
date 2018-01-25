@@ -46,24 +46,28 @@ import UIKit
 //        return view
 //    }
 //}
-//class sectionHeader: UIView {
-//    override init(frame: CGRect) {
-//        super.init(frame: frame)
-//        let view = addNib()
-//        self.addSubview(view!)
-//    }
-//    
-//    required init?(coder aDecoder: NSCoder) {
-//        fatalError("init(coder:) has not been implemented")
-//        let view = addNib()
-//        self.addSubview(view!)
-//    }
-//    func addNib()->UIView!{
-//        let view = UINib(nibName: "sectionHeader", bundle: nil).instantiate(withOwner: self, options: nil).first as! UIView
-//        
-//        view.autoresizingMask = [UIViewAutoresizing.flexibleWidth,
-//                                 UIViewAutoresizing.flexibleHeight]
-//        return view
-//    }
-//}
+class sectionHeader: UIView {
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        let view = addNib()
+        view.frame = self.bounds
+        view.autoresizingMask = [UIViewAutoresizing.flexibleWidth,
+                                 UIViewAutoresizing.flexibleHeight]
+        self.addSubview(view)
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+        let view = addNib()
+        view.frame = self.bounds
+        view.autoresizingMask = [UIViewAutoresizing.flexibleWidth,
+                                 UIViewAutoresizing.flexibleHeight]
+        self.addSubview(view)
+    }
+    func addNib()->UIView{
+        let view = UINib(nibName: "sectionHeader", bundle: nil).instantiate(withOwner: self, options: nil).first as! UIView
+        
+        return view
+    }
+}
 

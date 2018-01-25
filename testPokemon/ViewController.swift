@@ -38,11 +38,10 @@ extension ViewController:UITableViewDelegate,UITableViewDataSource{
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return 60
     }
-//    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-////        let header = UINib(nibName: "sectionHeader", bundle: nil).instantiate(withOwner: self, options: nil).first as! UIView
-//        let header = sectionHeader(frame: CGRect(x: 0, y: 0, width: 375, height: 60))
-//        return header
-//    }
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let header = sectionHeader()
+        return header
+    }
     func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
         return nil
     }
