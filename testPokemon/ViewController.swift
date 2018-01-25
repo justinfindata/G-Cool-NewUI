@@ -15,6 +15,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
+        
         }
         // Do any additional setup after loading the view, typically from a nib.
     
@@ -33,12 +34,20 @@ extension ViewController:UITableViewDelegate,UITableViewDataSource{
     func numberOfSections(in tableView: UITableView) -> Int {
         return 3
     }
-    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return "停車資訊"
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 60
     }
-    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        let view = sectionHeader(frame: CGRect(x: 0, y: 0, width: tableView.frame.width, height: 100))
-        return view
+//    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+////        let header = UINib(nibName: "sectionHeader", bundle: nil).instantiate(withOwner: self, options: nil).first as! UIView
+//        let header = sectionHeader(frame: CGRect(x: 0, y: 0, width: 375, height: 60))
+//        return header
+//    }
+    func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
+        return nil
+    }
+    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+        return 0
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         var cellName = ""

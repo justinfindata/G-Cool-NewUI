@@ -16,8 +16,8 @@ class ParkingFeatureItemCell: UICollectionViewCell {
     let screenSize = UIScreen.main.bounds.size
     override func awakeFromNib() {
         super.awakeFromNib()
-        let xFactor = screenSize.width / 375
-        height.constant = height.constant * xFactor
+        let factor = screenSize.width / 375
+        height.constant = height.constant * factor
     }
 
 }

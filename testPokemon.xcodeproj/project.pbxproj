@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		080B3F202015B45500E56074 /* ParkingFeatureItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 080B3F1E2015B45500E56074 /* ParkingFeatureItemCell.swift */; };
 		080B3F212015B45500E56074 /* ParkingFeatureItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 080B3F1F2015B45500E56074 /* ParkingFeatureItemCell.xib */; };
+		08312BC4201839DE00D65B75 /* sectionHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08312BC3201839DE00D65B75 /* sectionHeader.xib */; };
 		0865ED692003403D006C0346 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0865ED682003403D006C0346 /* AppDelegate.swift */; };
 		0865ED6B2003403D006C0346 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0865ED6A2003403D006C0346 /* ViewController.swift */; };
 		0865ED6E2003403D006C0346 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0865ED6C2003403D006C0346 /* Main.storyboard */; };
@@ -25,6 +26,7 @@
 /* Begin PBXFileReference section */
 		080B3F1E2015B45500E56074 /* ParkingFeatureItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingFeatureItemCell.swift; sourceTree = "<group>"; };
 		080B3F1F2015B45500E56074 /* ParkingFeatureItemCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ParkingFeatureItemCell.xib; sourceTree = "<group>"; };
+		08312BC3201839DE00D65B75 /* sectionHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = sectionHeader.xib; sourceTree = "<group>"; };
 		0865ED652003403D006C0346 /* testPokemon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testPokemon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0865ED682003403D006C0346 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0865ED6A2003403D006C0346 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -93,6 +95,7 @@
 				089A30F22011E3C200D67544 /* me_btn_rec_n.png */,
 				0865ED6C2003403D006C0346 /* Main.storyboard */,
 				D059D6A9201788B800664DF4 /* sectionHeader.swift */,
+				08312BC3201839DE00D65B75 /* sectionHeader.xib */,
 				D03A5FA32016331C00612D88 /* parkingZoomCell.swift */,
 				080B3F222015B46700E56074 /* parkingZoom */,
 				0865ED6F2003403D006C0346 /* Assets.xcassets */,
@@ -187,6 +190,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				080B3F212015B45500E56074 /* ParkingFeatureItemCell.xib in Resources */,
+				08312BC4201839DE00D65B75 /* sectionHeader.xib in Resources */,
 				0865ED732003403D006C0346 /* LaunchScreen.storyboard in Resources */,
 				0865ED702003403D006C0346 /* Assets.xcassets in Resources */,
 				089A30F32011E3C300D67544 /* me_btn_rec_n.png in Resources */,
