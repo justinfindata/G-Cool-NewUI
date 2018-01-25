@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		080B3F202015B45500E56074 /* ParkingFeatureItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 080B3F1E2015B45500E56074 /* ParkingFeatureItemCell.swift */; };
 		080B3F212015B45500E56074 /* ParkingFeatureItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 080B3F1F2015B45500E56074 /* ParkingFeatureItemCell.xib */; };
-		08312BC4201839DE00D65B75 /* sectionHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08312BC3201839DE00D65B75 /* sectionHeader.xib */; };
+		08312BC4201839DE00D65B75 /* SectionHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08312BC3201839DE00D65B75 /* SectionHeader.xib */; };
 		0865ED692003403D006C0346 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0865ED682003403D006C0346 /* AppDelegate.swift */; };
 		0865ED6B2003403D006C0346 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0865ED6A2003403D006C0346 /* ViewController.swift */; };
 		0865ED6E2003403D006C0346 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0865ED6C2003403D006C0346 /* Main.storyboard */; };
@@ -20,13 +20,15 @@
 		089A30F32011E3C300D67544 /* me_btn_rec_n.png in Resources */ = {isa = PBXBuildFile; fileRef = 089A30F22011E3C200D67544 /* me_btn_rec_n.png */; };
 		A16601C9E196F1DEBAB39408 /* Pods_testPokemon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBDB15B5C692989C288794BF /* Pods_testPokemon.framework */; };
 		D03A5FA42016331C00612D88 /* parkingZoomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03A5FA32016331C00612D88 /* parkingZoomCell.swift */; };
-		D059D6AA201788B800664DF4 /* sectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D059D6A9201788B800664DF4 /* sectionHeader.swift */; };
+		D04D1403201A1E1300D3AC0B /* NSObjectExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04D1402201A1E1300D3AC0B /* NSObjectExtension.swift */; };
+		D04D1405201A28A300D3AC0B /* FDBaseViewFromNib.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04D1404201A28A300D3AC0B /* FDBaseViewFromNib.swift */; };
+		D059D6AA201788B800664DF4 /* SectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D059D6A9201788B800664DF4 /* SectionHeader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		080B3F1E2015B45500E56074 /* ParkingFeatureItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingFeatureItemCell.swift; sourceTree = "<group>"; };
 		080B3F1F2015B45500E56074 /* ParkingFeatureItemCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ParkingFeatureItemCell.xib; sourceTree = "<group>"; };
-		08312BC3201839DE00D65B75 /* sectionHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = sectionHeader.xib; sourceTree = "<group>"; };
+		08312BC3201839DE00D65B75 /* SectionHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SectionHeader.xib; sourceTree = "<group>"; };
 		0865ED652003403D006C0346 /* testPokemon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testPokemon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0865ED682003403D006C0346 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0865ED6A2003403D006C0346 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -40,7 +42,9 @@
 		089A30F22011E3C200D67544 /* me_btn_rec_n.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = me_btn_rec_n.png; sourceTree = "<group>"; };
 		B04CA6105528977D96E4CBF2 /* Pods-testPokemon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testPokemon.release.xcconfig"; path = "Pods/Target Support Files/Pods-testPokemon/Pods-testPokemon.release.xcconfig"; sourceTree = "<group>"; };
 		D03A5FA32016331C00612D88 /* parkingZoomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = parkingZoomCell.swift; sourceTree = "<group>"; };
-		D059D6A9201788B800664DF4 /* sectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sectionHeader.swift; sourceTree = "<group>"; };
+		D04D1402201A1E1300D3AC0B /* NSObjectExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSObjectExtension.swift; sourceTree = "<group>"; };
+		D04D1404201A28A300D3AC0B /* FDBaseViewFromNib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FDBaseViewFromNib.swift; sourceTree = "<group>"; };
+		D059D6A9201788B800664DF4 /* SectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeader.swift; sourceTree = "<group>"; };
 		DB3694FC3B3F813A881CE09B /* Pods-testPokemon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testPokemon.debug.xcconfig"; path = "Pods/Target Support Files/Pods-testPokemon/Pods-testPokemon.debug.xcconfig"; sourceTree = "<group>"; };
 		DBDB15B5C692989C288794BF /* Pods_testPokemon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_testPokemon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -94,10 +98,12 @@
 				0865ED6A2003403D006C0346 /* ViewController.swift */,
 				089A30F22011E3C200D67544 /* me_btn_rec_n.png */,
 				0865ED6C2003403D006C0346 /* Main.storyboard */,
-				D059D6A9201788B800664DF4 /* sectionHeader.swift */,
-				08312BC3201839DE00D65B75 /* sectionHeader.xib */,
+				D059D6A9201788B800664DF4 /* SectionHeader.swift */,
+				D04D1404201A28A300D3AC0B /* FDBaseViewFromNib.swift */,
+				08312BC3201839DE00D65B75 /* SectionHeader.xib */,
 				D03A5FA32016331C00612D88 /* parkingZoomCell.swift */,
 				080B3F222015B46700E56074 /* parkingZoom */,
+				D04D1401201A1DE000D3AC0B /* Extension */,
 				0865ED6F2003403D006C0346 /* Assets.xcassets */,
 				0865ED712003403D006C0346 /* LaunchScreen.storyboard */,
 				0865ED742003403D006C0346 /* Info.plist */,
@@ -120,6 +126,14 @@
 				DBDB15B5C692989C288794BF /* Pods_testPokemon.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D04D1401201A1DE000D3AC0B /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				D04D1402201A1E1300D3AC0B /* NSObjectExtension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -190,7 +204,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				080B3F212015B45500E56074 /* ParkingFeatureItemCell.xib in Resources */,
-				08312BC4201839DE00D65B75 /* sectionHeader.xib in Resources */,
+				08312BC4201839DE00D65B75 /* SectionHeader.xib in Resources */,
 				0865ED732003403D006C0346 /* LaunchScreen.storyboard in Resources */,
 				0865ED702003403D006C0346 /* Assets.xcassets in Resources */,
 				089A30F32011E3C300D67544 /* me_btn_rec_n.png in Resources */,
@@ -254,12 +268,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D04D1403201A1E1300D3AC0B /* NSObjectExtension.swift in Sources */,
 				0865ED6B2003403D006C0346 /* ViewController.swift in Sources */,
 				08752A2D20157EA8009F842A /* parkingStatusCell.swift in Sources */,
 				D03A5FA42016331C00612D88 /* parkingZoomCell.swift in Sources */,
 				080B3F202015B45500E56074 /* ParkingFeatureItemCell.swift in Sources */,
-				D059D6AA201788B800664DF4 /* sectionHeader.swift in Sources */,
+				D059D6AA201788B800664DF4 /* SectionHeader.swift in Sources */,
 				0865ED692003403D006C0346 /* AppDelegate.swift in Sources */,
+				D04D1405201A28A300D3AC0B /* FDBaseViewFromNib.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

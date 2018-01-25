@@ -15,7 +15,6 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
-        
         }
         // Do any additional setup after loading the view, typically from a nib.
     
@@ -39,7 +38,7 @@ extension ViewController:UITableViewDelegate,UITableViewDataSource{
         return 60
     }
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        let header = sectionHeader()
+        let header = SectionHeader()
         return header
     }
     func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
