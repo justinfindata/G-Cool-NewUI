@@ -13,7 +13,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("rollBack測試Branch第一次commit")
+        print("第二次完成rollBack第一次commit")
         tableView.delegate = self
         tableView.dataSource = self
         }
